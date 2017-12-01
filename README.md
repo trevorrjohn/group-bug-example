@@ -28,6 +28,7 @@ end
 
 ```
 $ rails test
+Run options: --seed 21597
 
 # Running:
 
@@ -35,7 +36,14 @@ F
 
 Failure:
 BarTest#test_grouping_by_name [/Users/trevor/workspace/draft/group-bug-example/test/models/bar_test.rb:9]:
-Expected: {"0"=>1}
-  Actual: {"Fourty Two"=>1}
+Expected: {"Fourty Two"=>1}
+  Actual: {"0"=>1}
 
+
+bin/rails test test/models/bar_test.rb:4
+
+
+
+Finished in 0.038606s, 25.9028 runs/s, 51.8056 assertions/s.
+1 runs, 2 assertions, 1 failures, 0 errors, 0 skips
 ```
