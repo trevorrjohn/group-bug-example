@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Example of bug found in Rails 5.0.1 where group by does not use the correct type.
 
-Things you may want to cover:
+# Usage
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+git clone https://github.com/trevorrjohn/group-bug-example
+cd group-bug-example
+bundle install
+rails db:migrate db:test:prepare
+rails test
+```
